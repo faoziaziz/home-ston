@@ -1,0 +1,9 @@
+#!/bin/sh
+
+sudo stop javapage
+sudo stop nodehome
+
+mvn clean package
+
+sudo start javapage
+sudo start nodehome
