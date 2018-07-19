@@ -46,7 +46,7 @@ class App extends Component<AppProps, AppState> {
   );
   }
   componentDidMount() {
-  this.setState({isLoading: false});
+  this.setState({isLoading: true});
 
     fetch('http://ec2-54-227-226-98.compute-1.amazonaws.com:4212/good-beers') 
     .then(response => response.json())
