@@ -54,7 +54,7 @@ class App extends Component<AppProps, AppState> {
   this.setState({isLoading: true});
 
  /* fetch('http://ec2-54-227-226-98.compute-1.amazonaws.com:4212/good-beers') */
-    fetch('http://127.0.0.1:4212/good-beers')
+    fetch('http://54.227.226.98:4212/good-beers')
     .then(response => response.json())
     .then(data => this.setState({beers: data, isLoading: false}));
   }
