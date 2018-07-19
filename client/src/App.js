@@ -53,7 +53,7 @@ class App extends Component<AppProps, AppState> {
   componentDidMount() {
   this.setState({isLoading: true});
 
-  fetch('http://localhost:4212/good-beers')
+  fetch('http://ec2-54-227-226-98.compute-1.amazonaws.com:4212/good-beers')
     .then(response => response.json())
     .then(data => this.setState({beers: data, isLoading: false}));
   }
